@@ -5,12 +5,12 @@ class Scraper
 
 
   def self.scrape_index_page(index_url)
-    
+    binding.pry
     student_list = []
     html = Nokogiri::HTML(open(index_url))
 
     page.css(".student-name").text
-    binding.pry
+
     page.css(".student-location").text
   end
 
