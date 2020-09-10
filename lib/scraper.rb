@@ -28,11 +28,11 @@ class Scraper
       if link.text.include?("twitter")
         student_profile_hash[:twitter] = link.text
       elsif link.text.include?("linkedin")
-        student_profile_hash[:linkedin = link.text
+        student_profile_hash[:linkedin] = link.text
       elsif link.text.include?("github")
-        student_profile_hash[:github = link.text
-      elsif link.text.include?("linkedin")
-              student_profile_hash[:linkedin = link.text
+        student_profile_hash[:github] = link.text
+      else
+        student_profile_hash[:blog] = link.text
 
 
     social_media = html.css(".social-icon-container")
