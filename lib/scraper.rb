@@ -39,7 +39,7 @@ class Scraper
     student_profile_hash[:profile_quote] = html.css(".profile-quote").text
     student_profile_hash[:bio] = html.css(".description-holder").css("p").text
 
-    social_media = html.css(".social-icon-container")
+    student_profile_hash
 
   end
 
