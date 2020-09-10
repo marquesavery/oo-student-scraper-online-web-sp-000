@@ -24,7 +24,7 @@ class Scraper
     binding.pry
     html = Nokogiri::HTML(open(index_url))
     social_media = html.css(".social-icon-character")
-    
+
   end
 
 end
