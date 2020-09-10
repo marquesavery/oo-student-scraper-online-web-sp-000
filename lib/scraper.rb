@@ -23,7 +23,7 @@ class Scraper
     student_profile_hash = {}
     binding.pry
     html = Nokogiri::HTML(open(profile_url))
-    social_media = html.css(".a/@href")
+    social_media = html.css(".social-icon-container")
 
   end
 
