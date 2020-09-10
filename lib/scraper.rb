@@ -10,7 +10,6 @@ class Scraper
     html = Nokogiri::HTML(open(index_url))
 
     html.css(".student-name").text
-
     html.css(".student-location").text
   end
 
