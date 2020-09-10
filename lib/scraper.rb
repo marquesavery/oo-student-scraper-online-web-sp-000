@@ -20,7 +20,7 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url)
-    student_hash = {}
+    student_profile_hash = {}
     html = Nokogiri::HTML(open(index_url))
     students = html.css(".student-card")
     students.each do |student|
