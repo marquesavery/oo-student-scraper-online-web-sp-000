@@ -27,8 +27,12 @@ class Scraper
     social_links.each do |link|
       if link.text.include?("twitter")
         student_profile_hash[:twitter] = link.text
-      elsif link.text.include?("twitter")
-        student_profile_hash[:twitter] = link.text
+      elsif link.text.include?("linkedin")
+        student_profile_hash[:linkedin = link.text
+      elsif link.text.include?("github")
+        student_profile_hash[:github = link.text
+      elsif link.text.include?("linkedin")
+              student_profile_hash[:linkedin = link.text
 
 
     social_media = html.css(".social-icon-container")
