@@ -17,6 +17,7 @@ class Scraper
       student_hash[:profile_url] = student.css("a/@href").text
       student_list << student_hash
     end
+    binding.pry
     student_list
   end
 
