@@ -40,7 +40,6 @@ class Scraper
     student_profile_hash[:bio] = html.css(".description-holder").css("p").text
 
     student_profile_hash
-
   end
 
 end
