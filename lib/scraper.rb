@@ -22,7 +22,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     student_profile_hash = {}
     html = Nokogiri::HTML(open(index_url))
-    students = html.css(".student-card")
+    social_media = html.css(".social-icon-character")
     students.each do |student|
   end
 
