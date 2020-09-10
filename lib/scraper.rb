@@ -11,6 +11,7 @@ class Scraper
     html.each do |students|
       binding.pry
       puts students.text.strip
+      binding.pry
     end
 
     html.css(".student-name").text
