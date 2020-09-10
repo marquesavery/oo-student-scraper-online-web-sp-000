@@ -9,9 +9,9 @@ class Scraper
     student_list = []
     html = Nokogiri::HTML(open(index_url))
 
-    page.css(".student-name").text
+    html.css(".student-name").text
 
-    page.css(".student-location").text
+    html.css(".student-location").text
   end
 
   def self.scrape_profile_page(profile_url)
