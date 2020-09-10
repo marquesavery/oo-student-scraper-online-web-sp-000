@@ -19,6 +19,7 @@ class Scraper
     end
     binding.pry
     student_list
+    # student_list.sort {|a, b| a[:name] <=> b[:name]}
   end
 
   def self.scrape_profile_page(profile_url)
