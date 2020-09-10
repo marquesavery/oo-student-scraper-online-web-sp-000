@@ -6,12 +6,12 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     # binding.pry
-    student_list = []
+    student_list = {}
     html = Nokogiri::HTML(open(index_url))
     students = html.css(".student-card")
     students.each do |student|
       binding.pry
-      student.css(".student-name").text
+      student_listudent.css(".student-name").text
       student.css(".student-location").text
       student.css("a/@href").text
     end
