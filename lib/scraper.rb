@@ -15,6 +15,7 @@ class Scraper
       student_hash[:name] = student.css(".student-name").text
       student_hash[:location] = student.css(".student-location").text
       student_hash[:profile_url] = student.css("a/@href").text
+      student_list << student_hash
     end
   end
 
