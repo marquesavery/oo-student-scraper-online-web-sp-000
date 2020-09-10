@@ -10,7 +10,7 @@ class Scraper
     html = Nokogiri::HTML(open(index_url))
     html.each do |students|
       binding.pry
-      text = students.text.strip
+      puts students.text.strip
     end
 
     html.css(".student-name").text
