@@ -33,6 +33,7 @@ class Scraper
         student_profile_hash[:github] = link.text
       else
         student_profile_hash[:blog] = link.text
+      end
 
 
     social_media = html.css(".social-icon-container")
